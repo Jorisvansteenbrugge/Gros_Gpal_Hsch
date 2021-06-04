@@ -58,7 +58,7 @@ $ finisherSC.py -par 8 finisheroutput_HS/ ~/tools/miniconda/bin/mummer
 # Scaffolding SSPACE-Longread
 ```
 $ mkdir scaffolding_HS
-$ SSPACE-LongReadunix.pl -c finisheroutput_HS/improved3.fasta -p HS_nanoporeReads.fasta.gz \
+$ SSPACE-LongReadunix.pl -c finisheroutput_HS/improved3.fasta -p HS_nanoporeReads.fastq.gz \
      -t 8 -b scaffolding_HS/ -o 1000 -g 500 -k1
 ```
 # Gap Filling
@@ -73,3 +73,7 @@ $ Hydraslayer -o gapfilling_HS/HS_scaffolds_gapfilled.fasta -c 10 -a 60 gapfilli
     gapfilling_HS/correctedreads_onScaffolds.bam
 ```
 
+# Polishing with Medaka
+```
+medaka_consensus -i HS_nanoporeReads.fastq.gz -o H_schachti_scaffolded_gapFilled.fasta -t 12
+```
