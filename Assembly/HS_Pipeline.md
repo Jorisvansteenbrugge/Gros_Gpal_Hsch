@@ -9,7 +9,7 @@
 - Hydraslayer/GapFiller (https://github.com/Jorisvansteenbrugge/GapFiller)
 - SSPACE-Longread (https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-15-211)
 - Medaka (https://github.com/nanoporetech/medaka)
-- Pilon (https://github.com/broadinstitute/pilon)
+
 
 
 # Trimming of reads
