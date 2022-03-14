@@ -1,6 +1,6 @@
 
 """
-Counts the number of DOG-box motifs in a genes promotor region. The promotor regions gets seletected
+Counts the number of DOG-box motifs in a genes promotor region. The promotor regions gets selected
 by moving the start of the gene (pulled from a GFF file) 500 bases upstream. Using samtools the genomic sequence of 500pb+TSS: TSS is selected.
 
 """
